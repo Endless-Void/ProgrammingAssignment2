@@ -2,13 +2,13 @@
 ## functions do:
 
 ##These function can input a matrix (set by the user) and calculate his inverse 
-##matrix using the loaded matrix in the cache memory
+##using the cache memory.
 
 
 
 ## Write a short comment describing this function:
 ##This function makes a list that contain: the input matrix and his inverse 
-##matrix, this last one it's calculated in the next function
+##this last one it's calculated in the next function
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
@@ -26,7 +26,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 ## Write a short comment describing this function
-##This function solve the inverse matrix of a loaded object, and save his 
+##This function solve the inverse matrix of a loaded object 
+##(This object its a list created in the above function) and save his 
 ##result in this last one.
 
 cacheSolve <- function(x, ...) {
