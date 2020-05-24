@@ -1,4 +1,4 @@
-makeVector <- function(x = numeric(1, 2, 3)) {
+makeVector <- function(x = numeric) {
         m <- NULL
         set <- function(y) {
                 x <<- y
@@ -6,7 +6,7 @@ makeVector <- function(x = numeric(1, 2, 3)) {
         }
         get <- function() x
         setmean <- function(mean) m <<- mean
-        getmean <- function() make
+        getmean <- function() m
         list(set = set, get = get,
              setmean = setmean,
              getmean = getmean)
